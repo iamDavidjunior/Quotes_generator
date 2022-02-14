@@ -1,0 +1,163 @@
+const people = [
+  {
+    name: "Dalai Lama",
+    job: "Spiritual leader",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Dalai_Lama_in_2012_02.jpg/1200px-Dalai_Lama_in_2012_02.jpg",
+    quote: "The purpose of our lives is to be happy.",
+  },
+  {
+    name: "John Lennon",
+    job: "Singer",
+    img: "https://www.gannett-cdn.com/-mm-/ae811a38ccb7ca7681c5cd9edc7e0bae36516e06/c=261-0-2174-2550/local/-/media/2015/10/08/Phoenix/Phoenix/635799268539755113-ae-lennon09e.jpg",
+    quote: "Life is what happens when you’re busy making other plans.",
+  },
+  {
+    name: "Albert Enstein",
+    job: "Physicist",
+    img: "https://i.guim.co.uk/img/media/920143488ed741b40c526231f2724e036035cd71/0_51_2512_3139/master/2512.jpg?width=300&quality=45&auto=format&fit=max&dpr=2&s=3a2982ae9479df676739c678d0bdf31f",
+    quote:
+      "If you want to live a happy life, tie it to a goal, not to people or things.",
+  },
+  {
+    name: "Will Smith",
+    job: "Actor",
+    img: "https://www.pinkvilla.com/imageresize/will_smith.jpeg?width=752&format=webp&t=pvorg",
+    quote:
+      "Money and success don’t change people; they merely amplify what is already there.",
+  },
+  {
+    name: "Steve Jobs",
+    job: "Business man",
+    img: "https://assets.entrepreneur.com/content/3x2/2000/1617286255-GettyImages-80145055.jpg?crop=4:3",
+    quote:
+      "Your time is limited, so don’t waste it living someone else’s life. Don’t be trapped by dogma – which is living with the results of other people’s thinking.",
+  },
+  {
+    name: "Eleanor Roosevelt",
+    job: "Former US first lady",
+    img: "https://www.history.com/.image/ar_1:1%2Cc_fill%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_1200/MTcxMzg5OTkxNjEwNDkyOTEw/eleanor-roosevelt_gettyimages-507047802.jpg",
+    quote:
+      "If life were predictable it would cease to be life, and be without flavor.",
+  },
+  {
+    name: "Socrates",
+    job: "Philosoph",
+    img: "https://cdn.britannica.com/69/75569-050-7AB67C4B/herm-Socrates-half-original-Greek-Capitoline-Museums.jpg",
+    quote: "The unexamined life is not worth living.",
+  },
+  {
+    name: "Oprah Winfrey",
+    job: "American host",
+    img: "https://cdn.britannica.com/64/188764-050-83575820/Oprah-Winfrey-2013.jpg",
+    quote: "Turn your wounds into wisdom.",
+  },
+  {
+    name: "Hillary Clinton",
+    job: "Former US secretary of states",
+    img: "https://m.media-amazon.com/images/M/MV5BNmQ1OTJhMzItNWIzOC00ZjdlLWEwNDgtODRiYjczNTkyZjc5XkEyXkFqcGdeQXVyMTExNDQ2MTI@._V1_.jpg",
+    quote:
+      "Do all the good you can, for all the people you can, in all the ways you can, as long as you can.",
+  },
+  {
+    name: "Kobe Bryant",
+    job: "Basketball player",
+    img: "https://upload.wikimedia.org/wikipedia/commons/9/96/Kobe_Bryant_8.jpg",
+    quote:
+      "Everything negative – pressure, challenges – is all an opportunity for me to rise.",
+  },
+  {
+    name: "Lebron James",
+    job: "Basketball player",
+    img: "https://pbs.twimg.com/profile_images/1443411467303194626/PG3JoQyl_400x400.jpg",
+    quote: "I like criticism. It makes you strong.",
+  },
+  {
+    name: "George Clooney",
+    job: "Actor",
+    img: "https://www.pinkvilla.com/imageresize/george_clooney_0.jpeg?width=752&format=webp&t=pvorg",
+    quote: "You never really learn much from hearing yourself speak.",
+  },
+  {
+    name: "Celine Dion",
+    job: "Singer",
+    img: "https://m.media-amazon.com/images/M/MV5BOTkyNTk2MTc5M15BMl5BanBnXkFtZTcwMDg0ODY1NA@@._V1_.jpg",
+    quote:
+      "Life imposes things on you that you can’t control, but you still have the choice of how you’re going to live through this.",
+  },
+  {
+    name: "John F.Kennedy",
+    job: "Former US president",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/John_F._Kennedy%2C_White_House_color_photo_portrait.jpg/1200px-John_F._Kennedy%2C_White_House_color_photo_portrait.jpg",
+    quote:
+      "Life is never easy. There is work to be done and obligations to be met – obligations to truth, to justice, and to liberty.",
+  },
+  {
+    name: "Elton John",
+    job: "Singer",
+    img: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/Elton_John_Cannes_2019.jpg/220px-Elton_John_Cannes_2019.jpg",
+    quote: "Live for each second without hesitation.",
+  },
+  {
+    name: "Confucius",
+    job: "Spirirtual Leader",
+    img: "https://www.chinausfocus.com/d/file/201807/fcbae44c364920e1765804b9bc5983e5.jpg",
+    quote: "Life is really simple, but men insist on making it complicated.",
+  },
+  {
+    name: "Victor Hugo",
+    job: "Former member of the national assembly of France",
+    img: "https://upload.wikimedia.org/wikipedia/commons/e/e6/Victor_Hugo_by_%C3%89tienne_Carjat_1876_-_full.jpg",
+    quote: "Life is a flower of which love is the honey",
+  },
+];
+
+//Select elements
+const image = document.getElementById("person-img");
+
+const author = document.getElementById("author");
+
+const job = document.getElementById("job");
+
+const info = document.getElementById("quote");
+
+const prevBtn = document.querySelector(".prev-btn");
+
+const nextBtn = document.querySelector(".next-btn");
+
+const randomBtn = document.querySelector(".random-btn");
+let currentAuthor = 0;
+
+//load initial author
+window.addEventListener("DOMContentLoaded", () => {
+  showAuthor(currentAuthor);
+});
+
+const showAuthor = () => {
+  const person = people[currentAuthor];
+  image.src = person.img;
+  author.textContent = person.name;
+  job.textContent = person.job;
+  info.textContent = person.quote;
+};
+
+//next button
+nextBtn.addEventListener("click", () => {
+  currentAuthor++;
+  if (currentAuthor > people.length - 1) {
+    currentAuthor = 0;
+  }
+  showAuthor();
+});
+//prev button
+prevBtn.addEventListener("click", () => {
+  currentAuthor--;
+  if (currentAuthor < 0) {
+    currentAuthor = people.length - 1;
+  }
+  showAuthor();
+});
+
+randomBtn.addEventListener("click", () => {
+  currentAuthor = Math.floor(Math.random() * people.length);
+  showAuthor();
+});

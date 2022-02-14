@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "poppins", sans-serif;
+  background-color: #1a1a1a;
+}
+
+section {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  background-color: white;
+  width: 50%;
+  min-height: 90vh;
+  max-width: 1400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  border-radius: 3px;
+  padding: 1em 2em;
+}
+
+.img-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.img-container img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  margin-bottom: 0.5em;
+}
+
+#author {
+  color: #1a1a1a;
+  font-size: 2rem;
+  line-height: 1;
+}
+
+#job {
+  color: #0d7cc7;
+  font-size: 0.85rem;
+  margin-bottom: 1em;
+}
+
+#quote {
+  font-size: 1rem;
+  line-height: 1.2;
+  font-style: italic;
+  color: #1a1a1a;
+}
+
+.buttons-container button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background-color: #0d7cc7;
+  padding: 0.5em;
+  font-size: 0.85rem;
+  color: white;
+  margin: 1em 0.25em;
+}
+
+.random-btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  color: white;
+  background-color: #1a1a1a;
+  font-size: 0.85rem;
+  padding: 0.75em 1em;
+  border-radius: 3px;
+}
+/*# sourceMappingURL=style.css.map */
